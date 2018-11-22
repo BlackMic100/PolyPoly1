@@ -216,7 +216,7 @@ client.on('message', async msg => { // eslint disable line
         serverQueue.songs = [];
         serverQueue.connection.dispatcher.end('Stop command has been used!');
         return undefined;
-    } else if (msg.content.startsWith(`${PREFIX}volume`)) {
+    } else if (msg.content.startsWith(`${PREFIX}vol`)) {
         console.log(`${msg.author.tag} has been used the ${PREFIX}volume command in ${msg.guild.name}`);
         if (!msg.member.voiceChannel) return msg.channel.send({embed: {
             color: 15158332,
